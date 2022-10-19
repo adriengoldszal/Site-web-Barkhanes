@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etude à petite échelle</title>
+  </head>
+  <style>
+    body {
+        background-color: blanchedalmond;
+        font: 500 100%/1.5 times new roman
+    }
+    h1 {
+        text-align:center;
+    }
+    img{
+        width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  </style>
+  <body>
+    <h1>Etude des dunes à petite échelle</h1>
+    <h2> Idée du montage </h2>
+    <p>
+      L’existence d’une longueur caractéristique nous permet donc d’affirmer
+      qu’il est possible d’étudier des barkhanes à petite échelle. Cette
+      longueur caractéristique permet de faire le lien entre les différentes
+      échelles. Ainsi, en redimensionnant nos dunes centimétriques par ldrag, on
+      pourra les comparer aux dunes réelles. Pour former des dunes en
+      laboratoire, il nous faut donc respecter deux principes : <div> > réduire ldrag
+      : pour réduire la taille minimale ce que nous avons fait en nous plaçant
+      dans un milieu plus dense : l’eau. </div></div>> Simuler un courant unidirectionnel
+      comme l’on en retrouve dans le désert.</div>
+    </p>
+    <img src="images/tableau.png">
+    <p>Nous avons donc développé le montage suivant : Pour simuler un courant unidirectionnel, nous avons mis en place un système de plaque mouvante sur laquelle l’on dépose un tas de billes de verre de densité et de diamètre connus. L’utilisation de billes de verre nous permettait d’avoir des diamètres précis et ainsi travailler toujours avec les mêmes paramètres.  Nous avons opté pour un tas initial conique facile à reproduire à l’identique pour avoir les mêmes conditions initiales. Notre objectif était donc de  déplacer la plaque de manière asymétrique :aller rapide, retour très lent, simule le vent unidirectionnel. (37cm/s à l’aller, 6cm/s au retour ie environ 80 cm aller puis 80 cm au retour pour revenir à l’emplacement initial)
+    </p>
+    <img src="images//tinkercad tipe.png">
+    <h2> Evolution du montage </h2>
+    <p>
+        Le montage final est le résultat de nombreuses modifications que nous avons effectuées pour surmonter les divers problèmes rencontrés. <div> Initialement, nous faisions les aller retours à la main, avec une plaque qui frottait sur le sol, ce qui nous empêchait de contrôler efficacement la vitesse. Nous avons cherché à automatiser le mouvement en reliant notre plaque avec un système de poulies à un moteur lui même relié à un GBF, mais aucun des signaux que nous essayions sur le GBF ne permettait un déplacement de la place convenable (trop saccadé en particulier) De plus, nous avions des problèmes de lestage de plaque et les poids que nous avons rajoutés modifiaient l’écoulement autour du sable empêchant la formation de dunes. Enfin, la plaque en bois possédait un mauvais contraste avec le sable blanc et nous empéchait de pointer avec précision. 
+
+        Nous avons donc ajouté des roues pour avoir un meilleur mouvement, peint la plaque en noir et lesté la plaque avec une plaque en métal collée en dessus. Nous avons créé notre propre signal adapté au mouvement sur le GBF et relié le tout à la plaque avec un embout imprimé 3D et du papier abrasif pour éviter les problèmes de glissement de fil sur les poulies
+    
+    </p>
+    <h2> Montage final </h2>
+    <p>Dans le montage final, un GBF contrôle le mouvement de la plaque, par un signal amplifié par le système ci-contre. Le déplacement est permis par un système de courroie qui entoure l’aquarium, lié à un moteur commandé par un GBF. Un système amplificateur permet de faire l’intermédiaire et amplifier le signal. Une tension de signal positive fait avancer la plaque, un signal négatif la fait reculer. 
+        Nous avons choisi une vitesse de 37cm/s à l’aller, 6cm/s au retour ie environ 80 cm aller puis 80 cm au retour pour revenir à l’emplacement initial) ce qui nous permettait de former des dunes barkhanes suffisament rapidement pour que les manipulations ne soient pas trop chronophages. Cependant, même si il est difficile de faire le lien entre la vitesse de l’écoulement dans notre expérience et les dunes réelles, des vitesses plus lentes auraient été surement plus adaptées car, comme nous le verrons, nos vitesses de dunes semblent trop rapide.</p>
+    <img src="images/montagefinal1.png">
+    <img src="images/montagefinal2.png">
+    <p>L’expérience est suivie en prenant des photos après chaque aller retour de la plaque. La plaque est quadrillée pour pouvoir ensuite mesurer le déplacement des dunes. Avec un logiciel de pointage, les dimensions caractéristiques et le déplacement sont mesurés.
+        Une tentative de mesure de la hauteur avec un laser a échoué. 
+        
+        On observe qu’après un court régime transitoire où il y a une forte érosion du tas conique initial, la forme de barkhane apparaît et la dune se met à perdre beaucoup moins de stable : régime permanent. 
+        </p>
+    <img src="images/diapodunes.png">
+    <a href="Sommaire.html"> Retour Sommaire </a>
+    <a href="Informatique.html" , style="margin-left: 1000px">
+      Vers prochaine page
+    </a>
+  </body>
+</html>

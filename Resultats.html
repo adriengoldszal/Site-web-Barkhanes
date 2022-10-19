@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: blanchedalmond;
+      font: 500 100%/1.5 times new roman;
+    }
+    h1 {
+      text-align: center;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+    }
+  </style>
+  <body>
+    <h1>Analyse des résultats</h1>
+    <p>
+      La longévité des formes barkhanoides obtenues dans l’expérience à petite
+      échelle ainsi que les dunes simulées sur python nous incitent à faire un
+      lien entre ces modélisations et les dunes réelles pour étudier si ces
+      modélisations sont cohérentes avec les mesures prises dans la nature. On
+      observe tout d’abord que les dunes simulées et à petite échelle présentent
+      toutes une forme en croissant avec deux cornes aux extrémités.
+    </p>
+    <h2>Les rapports constants</h2>
+    <p>
+      Pour vérifier si ces modélisations nous permettent de former de véritables
+      barkhanes, il faut étudier les dimensions des dunes obtenues. <div>La longueur
+      ldrag caractéristique introduite au début nous permettrait de faire le
+      lien entre dunes à petite échelle et dunes réelles. Pour la simulation
+      informatique une unité arbitraire d’un mètre par élément à été prise. Les
+      données expérimentales sont comparées avec des dunes barkhanes réelles
+      pointées par un chercheur et l’expérience du scientifique Pascal Hersen
+      qui a fait une expérience similaire à la nôtre pour lesquelles nous
+      n’avons pas mis d’incertitude car aucune information n’était donnée. </p> 
+      <h3> Longueur en fonction de largeur </h3>
+      <p> Après redimensionnement des mesures par ldrag, on observe que les dunes à petite
+        échelle se superposent aux dunes réelles et vérifient les mêmes lois
+        expérimentales : largeur et longueur sont bien équivalentes. On peut donc
+        conclure que l’expérience est fructueuse. La simulation informatique
+        vérifie elle aussi les critères expérimentaux observés pour les barkhanes.</p>
+    
+    <img src="images/largeurlonguer.png">
+    <h3> Hauteur en fonction de largeur </h3>
+    <p>Nous avons cependant rencontré des problèmes pour la mesure de la hauteur. Pour les barkhanes à petite échelle, même si l’on retrouve le bon ordre de grandeur pour les dimensions, la mesure de la hauteur ( inférieure à 1 cm), s’est révélée difficile. Nous avons cherché à les pointer avec un laser mais nous avions une très mauvaise précision.  Les dunes possédaient souvent des hauteurs très proches, impossible à distinguer. 
+        Pour les dunes simulées, on trouve une proportionnalité de 0,4, qui ne correspond pas aux observations expérimentales</p>
+    <img src="images/hauteurlongueur.png">
+    <p>Cela est du en partie au caractère discret de la modélisation qui montre ses limites. Pour des rapports d’aspect trop faibles, les règles ne fonctionnent pas bien et tendent par elles même à accentuer les hauteurs. La formation de dunes plus grandes, réduisant ce caractère discret, semble permettre la formation de dunes plus fidèles à la réalité</p>
+    <img src="images/pbhauteur.png">
+    <h2>Etudes du déplacement  </h2>
+    <p> Pour véritablement valider les modèles, il faut s’assurer que les dunes à petite échelle et les dunes simulées vérifient la même loi de vitesse que les dunes réelles. C’est même la grandeur la plus intéressante dans un objectif de prévention de l’ensablement. 
+    </p>
+    <h3> Déplacement en fonction de la vitesse de la plaque </h3>
+    <p>Nous avons cherché tout d’abord à étudier l’influence de la vitesse de la plaque, que l’on peut assimiler à la vitesse de vent apparent dans le désert, sur le déplacement de la dune. On observe que pour une vitesse de plaque donnée, la vitesse de la dune est constante, ce qui souligne la stabilité des formes barkhanes, elles perdent peu de sable au cours du temps et changent peu de forme. De plus, on observe qualitativement qu’une augmentation de la vitesse de la plaque entraine une augmentation de la vitesse de la dune, avec une vitesse limite à partir de laquelle elle n’est plus stable. Un résultat que le scientifique Pascal Hersen a pu lui aussi obtenir. 
+    </p>
+    <img src="images/vplaque.png">
+    <h3> Déplacement en fonction de la masse </h3>
+    <p> En plus de ces résultats qualitatifs nous voulions plus précisement vérifier si nos dunes à petite échelle et nos dunes simulées vérifient la loi de vitesse théorique présentée plus tôt. Un bilan de masse sur la dune nous permet de relier masse et hauteur. Or celle-ci est difficile à mesurer, on utilise les rapports constants pour relier vitesse et masse. On approxime en négligeant les pertes par les cornes car la vitesse de déplacement de la dune est importante par rapport aux temps caractéristiques de son évolution morphologique dues aux pertes. On étudie donc le déplacement de la dune sur la plaque en fonction du temps pour obtenir sa vitesse. On observe dans les deux situations que l’on a bien un lien entre la vitesse de la dune et le puissance tiers de leur masse. On observe cependant des grandes différences dans la constante K de proportionnalité qui dépend du flux sur la crête. Ainsi, comme l’a retrouvé le scientifique Pascal Hersen, nos dunes sont trop rapides : ceci peut être dû au déplacement de la plaque sûrement trop rapide. En effet, avec des déplacements plus lents, Pascal Hersen arrive déjà à diminuer la vitesse des dunes et il est difficile de faire le lien entre vitesse de l’écoulement dans notre expérience et vitesse de la plaque. Pour la simulation informatique, on arrive rapidement aux limites de la modélisation. Tout d’abord, il est difficile de faire le lien entre nombre d’itérations du programme et temps réel. D’autre part, la décision de poser arbitrairement 1 valeur = 1m pour faire l’analogie montre à nouveau ici ces limites : avoir des comparaisons plus cohérentes nécessiterait sûrement de former, comme l’on a vu pour la hauteur, de former des dunes de tailles beaucoup plus importantes.
+    </p>
+    <img src="images/vmasse.png">
+    <a href="Sommaire.html"> Retour Sommaire </a>
+    <a href="Conclusion.html" , style="margin-left: 1000px">
+      Vers prochaine page
+    </a>
+</body>
+</html>
